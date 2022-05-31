@@ -40,16 +40,16 @@ changeCurrency = () => {
     const currencyName = document.getElementById('currency-name')
     const currencyImg = document.getElementById('currency-img')
 
-    
+    if (select.value === 'U$$ Dolar americano') {
+        currencyName.innerHTML = 'Dolar americano'
+        currencyImg.src = "./assets/eua.png"
+    }
 
     if (select.value === '€ Euro') {
         currencyName.innerHTML = 'Euro'
         currencyImg.src = "./assets/euro.png"
     }
-    if (select.value === 'U$$ Dolar americano') {
-        currencyName.innerHTML = 'Dolar americano'
-        currencyImg.src = "./assets/eua.png"
-    }
+    
 
     if (select.value === 'Bitcoin') {
         currencyName.innerHTML = 'Bitcoin'
